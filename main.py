@@ -8,16 +8,17 @@ def get_multiplied_digits (number):
 
         return first * get_multiplied_digits(int(str_number[1:]))
 
-    elif first == 0:
-        return first + 1
-
-    else:
+    if first != 0:
         return first
 
+    return 1
 
-result = get_multiplied_digits(402030)
-print(result)
+a = 0
+if a == 0:
+    print(a)
+else:
+    result = get_multiplied_digits(a)
+    print(result)
 
-'''number = 40203
-str_ = str(number)
-print(str(str_[-1]))'''
+'''result = get_multiplied_digits(0)
+print(result)'''
